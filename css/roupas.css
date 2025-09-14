@@ -1,0 +1,129 @@
+  /* Estilos específicos para a página de roupas */
+
+            .banner {
+            background: linear-gradient(135deg, #e91e63, #c2185b);
+            padding: 3rem 0;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+        
+        .banner h1 {
+            font-size: 3.5rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            animation: fadeIn 1s ease-out;
+        }
+
+    .filtros-container {
+      display: flex;
+      background-color: #161616;
+      padding: 20px 0;
+      margin-bottom: 30px;
+      box-shadow: 0 10px 5px -5px rgba(0, 0, 0, 0.3);
+
+    }
+    
+    .filtros {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+    
+    .filtros h3 {
+      margin-bottom: 15px;
+      font-size: 1.2rem;
+      color: #ffffff;
+    }
+    
+    .categorias-filtro {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+    }
+
+    
+    .categoria-btn {
+    padding: 0.6rem 1.2rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    }
+    
+    .categoria-btn:hover, .categoria-btn.active {
+      background-color: #e91e63;
+      color: white;
+      border-color: #000;
+    }
+    
+    .produtos-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+    
+    .categoria-section {
+      margin-bottom: 50px;
+    }
+    
+    .categoria-section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      /* border-bottom: 2px solid #DD1C61; */
+    }
+
+  .back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: #e91e63; /* Cor rosa */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    z-index: 99;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(233, 30, 99, 0.3); /* Sombra combinando */
+  }
+
+  .back-to-top:hover {
+    opacity: 1;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(233, 30, 99, 0.4); /* Sombra maior no hover */
+  }
+
+  @media (max-width: 768px) {
+    .back-to-top {
+      width: 40px;
+      height: 40px;
+      font-size: 16px;
+      bottom: 20px;
+      right: 20px;
+    }
+  }
+    
+    @media (max-width: 768px) {
+      .categorias-filtro {
+        justify-content: center;
+      }
+      
+      .categoria-section h2 {
+        font-size: 1.5rem;
+        text-align: center;
+      }
+    }

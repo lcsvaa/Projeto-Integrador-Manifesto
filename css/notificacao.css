@@ -1,0 +1,35 @@
+  #notification-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 300px;
+  }
+
+.notification {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 15px;
+            border-radius: 5px;
+            color: white;
+            z-index: 1000;
+            animation: fadeIn 0.5s, fadeOut 0.5s 2.5s;
+        }
+        .notification.success {
+            background-color: #4CAF50;
+        }
+        .notification.error {
+            background-color: #f44336;
+        }
+        @keyframes fadeIn {
+            from {opacity: 0; right: -100px;}
+            to {opacity: 1; right: 20px;}
+        }
+        @keyframes fadeOut {
+            from {opacity: 1; right: 20px;}
+            to {opacity: 0; right: -100px;}
+        }

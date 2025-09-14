@@ -1,0 +1,147 @@
+       /* Estilos específicos para a página de pagamentos */
+        .banner {
+            background: linear-gradient(135deg, #e91e63, #c2185b);
+            padding: 3rem 0;
+            text-align: center;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+        
+        .banner h1 {
+            font-size: 3.5rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            animation: fadeIn 1s ease-out;
+        }
+        
+        .payment-container {
+            max-width: 1000px;
+            margin: 3rem auto;
+            padding: 0 20px;
+        }
+        
+        .payment-section {
+            margin-bottom: 3rem;
+            background-color: #1a1a1a;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .payment-section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            color: #e91e63;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .payment-section h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background-color: #e91e63;
+        }
+        
+        .payment-methods {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        
+        .method-card {
+            background-color: #2a2a2a;
+            border-radius: 8px;
+            padding: 1.5rem;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .method-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        
+        .method-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #e91e63;
+        }
+        
+        .method-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .method-card p {
+            color: #ccc;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+        
+        .installments-info {
+            background-color: #2a2a2a;
+            border-left: 4px solid #e91e63;
+            padding: 1.5rem;
+            margin-top: 2rem;
+            border-radius: 0 5px 5px 0;
+        }
+        
+        .security-info {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid #333;
+        }
+        
+        .security-badge {
+            flex-shrink: 0;
+            width: 80px;
+        }
+        
+        .security-text {
+            color: #ccc;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+        
+        .security-text strong {
+            color: white;
+        }
+        
+        @media (max-width: 768px) {
+            .banner h1 {
+                font-size: 2.5rem;
+            }
+            
+            .payment-methods {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            }
+            
+            .security-info {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .banner h1 {
+                font-size: 2rem;
+            }
+            
+            .payment-section {
+                padding: 1.5rem;
+            }
+            
+            .payment-methods {
+                grid-template-columns: 1fr;
+            }
+        }

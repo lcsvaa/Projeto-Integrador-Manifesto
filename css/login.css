@@ -1,0 +1,383 @@
+ /* Estilos específicos para a página de login/cadastro */
+        .banner {
+            background: linear-gradient(135deg, #e91e63, #c2185b);
+            padding: 3rem 0;
+            text-align: center;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+        
+        .banner h1 {
+            font-size: 3.5rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            animation: fadeIn 1s ease-out;
+        }
+        
+        .auth-container {
+            max-width: 1000px;
+            margin: 3rem auto;
+            padding: 0 20px;
+            display: flex;
+            gap: 2rem;
+        }
+        
+        .auth-form-container {
+            flex: 1;
+            background-color: #1a1a1a;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .auth-tabs {
+            display: flex;
+            margin-bottom: 2rem;
+            border-bottom: 1px solid #333;
+        }
+        
+        .auth-tab {
+            padding: 0.8rem 1.5rem;
+            cursor: pointer;
+            position: relative;
+            color: #ccc;
+            font-weight: 600;
+        }
+        
+        .auth-tab.active {
+            color: white;
+        }
+        
+        .auth-tab.active::after {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background-color: #e91e63;
+        }
+        
+        .auth-form {
+            display: none;
+        }
+        
+        .auth-form.active {
+            display: block;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 0.8rem 1rem;
+            background-color: #2a2a2a;
+            border: 1px solid #333;
+            border-radius: 5px;
+            color: white;
+            font-family: 'Kanit', sans-serif;
+        }
+        
+        .form-control:focus {
+            outline: none;
+            border-color: #e91e63;
+        }
+        
+        .password-container {
+            position: relative;
+        }
+        
+        .toggle-password {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #ccc;
+            cursor: pointer;
+        }
+        
+        .remember-forgot {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+        
+        .remember-me {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .remember-me input {
+            accent-color: #e91e63;
+        }
+        
+        .forgot-password {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .forgot-password:hover {
+            color: #e91e63;
+        }
+        
+        .auth-btn {
+            width: 100%;
+            padding: 0.8rem;
+            background-color: #e91e63;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: 'Kanit', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .auth-btn:hover {
+            background-color: #c2185b;
+        }
+        
+        .social-login {
+            margin-top: 2rem;
+            text-align: center;
+        }
+        
+        .social-login p {
+            position: relative;
+            margin-bottom: 1.5rem;
+            color: #ccc;
+        }
+        
+        .social-login p::before,
+        .social-login p::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            width: 30%;
+            height: 1px;
+            background-color: #333;
+        }
+        
+        .social-login p::before {
+            left: 0;
+        }
+        
+        .social-login p::after {
+            right: 0;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+            justify-content: center;
+        }
+        
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #2a2a2a;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        
+        .social-icon:hover {
+            background-color: #ffffff;
+            transform: translateY(-3px);
+        }
+        
+        .auth-benefits {
+            flex: 1;
+        }
+        
+        .benefits-title {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: white;
+        }
+        
+        .benefits-list {
+            list-style: none;
+        }
+        
+        .benefit-item {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .benefit-icon {
+            color: #e91e63;
+            font-size: 1.2rem;
+            margin-top: 0.2rem;
+        }
+        
+        .benefit-content h4 {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            color: white;
+        }
+        
+        .benefit-content p {
+            color: #ccc;
+            line-height: 1.6;
+        }
+        
+        .cpf-error {
+            color: #ff6b6b;
+            font-size: 0.8rem;
+            margin-top: 0.3rem;
+            display: none;
+        }
+
+        /* Estilos para mensagens de erro */
+.alerta.erro {
+    background-color: #ffebee;
+    border-left: 4px solid #f44336;
+    color: #d32f2f;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.input-error {
+    border-color: #f44336 !important;
+}
+
+.alerta.erro a {
+    color: #d32f2f;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.alerta.erro a:hover {
+    color: #b71c1c;
+}
+
+        /* Estilos para o modal de recuperação de senha */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    backdrop-filter: blur(5px); /* Efeito de desfoque no fundo - opcional */
+}
+
+.modal-content {
+    background-color: #242424;
+    margin: auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    width: 90%;
+    max-width: 500px;
+    position: fixed; /* Alterado para fixed */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: modalopen 0.3s;
+}
+
+@keyframes modalopen {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -60%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.close-modal {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.close-modal:hover,
+.close-modal:focus {
+    color: #333;
+    text-decoration: none;
+}
+
+.modal h2 {
+    margin-top: 0;
+    color: #e91e63;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.modal p {
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+@media (max-width: 600px) {
+    .modal-content {
+        width: 85%;
+    }
+}
+        
+        @media (max-width: 768px) {
+            .banner h1 {
+                font-size: 2.5rem;
+            }
+            
+            .auth-container {
+                flex-direction: column;
+            }
+            
+            .auth-benefits {
+                order: -1;
+                margin-bottom: 2rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .banner h1 {
+                font-size: 2rem;
+            }
+            
+            .auth-form-container {
+                padding: 1.5rem;
+            }
+            
+            .auth-tabs {
+                justify-content: center;
+            }
+            
+            .remember-forgot {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1rem;
+            }
+        }

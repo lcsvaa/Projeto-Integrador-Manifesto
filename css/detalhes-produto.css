@@ -1,0 +1,248 @@
+   /* Reset e Estilos Base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      color: #ffffff;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    /* Layout do Produto */
+    .product-detail {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      margin-top: 30px;
+    }
+    
+    /* Galeria de Imagens */
+    .product-gallery {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .main-image {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+    
+    .thumbnail-container {
+      display: flex;
+      gap: 10px;
+    }
+    
+    .thumbnail {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 8px;
+      cursor: pointer;
+      border: 1px solid #ddd;
+      transition: all 0.3s ease;
+    }
+    
+    .thumbnail:hover, .thumbnail.active {
+      border-color: #e91e63;
+    }
+    
+    /* Informações do Produto */
+    .product-info {
+      padding: 20px;
+    }
+    
+    .product-title {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+    
+    .product-rating {
+      color: #FFA41C;
+      margin-bottom: 15px;
+    }
+    
+    .product-price {
+      font-size: 24px;
+      font-weight: bold;
+      color: #e91e63;
+      margin: 20px 0;
+    }
+    
+    /* Seletores */
+    .option-group {
+      margin-bottom: 25px;
+    }
+    
+    .option-title {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+    
+    .size-options, .color-options {
+      display: flex;
+      gap: 10px;
+    }
+    
+    .size-btn {
+      width: 40px;
+      height: 40px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    
+    .size-btn:hover, .size-btn.selected {
+      background-color: #e91e63;
+      color: white;
+      border-color: #e91e63;
+    }
+    
+    .color-btn {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      cursor: pointer;
+      position: relative;
+      border: 1px solid #eee;
+    }
+    
+    .color-btn.selected::after {
+      content: "";
+      position: absolute;
+      top: -3px;
+      left: -3px;
+      right: -3px;
+      bottom: -3px;
+      border: 2px solid #e91e63;
+      border-radius: 50%;
+    }
+    
+    /* Controle de Quantidade */
+    .quantity-control {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin: 25px 0;
+    }
+    
+    .qty-btn {
+      width: 35px;
+      height: 35px;
+      border-radius: 8px;
+      background-color: #f5f5f5;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .qty-input {
+      width: 50px;
+      height: 35px;
+      text-align: center;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+    }
+    
+    /* Botão Principal */
+    .add-to-cart {
+      background-color: #e91e63;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+      max-width: 300px;
+    }
+    
+    .add-to-cart:hover {
+      background-color: #c2185b;
+      transform: translateY(-2px);
+    }
+    
+    /* Descrição */
+    .product-description {
+      margin-top: 30px;
+      padding-top: 20px;
+      border-top: 1px solid #eee;
+    }
+
+    .estoque-baixo-msg {
+    color: red;
+    font-weight: bold;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    margin-top: 5px;
+  }
+
+  .estoque-baixo-msg.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+    
+    /* Responsividade */
+    @media (max-width: 992px) {
+      .product-detail {
+        gap: 30px;
+      }
+      
+      .main-image {
+        height: 400px;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .product-detail {
+        grid-template-columns: 1fr;
+      }
+      
+      .main-image {
+        height: 350px;
+      }
+      
+      .add-to-cart {
+        max-width: 100%;
+      }
+    }
+    
+    @media (max-width: 576px) {
+      .main-image {
+        height: 300px;
+      }
+      
+      .thumbnail {
+        width: 60px;
+        height: 60px;
+      }
+      
+      .product-title {
+        font-size: 24px;
+      }
+    }

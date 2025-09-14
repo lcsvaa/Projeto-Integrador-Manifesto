@@ -1,0 +1,177 @@
+       /* Additional styles for novidades page */
+        .banner {
+            background: linear-gradient(135deg, var(--primary-color), #c2185b);
+            padding: 3rem 0;
+            text-align: center;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+        
+        .banner h1 {
+            font-size: 3.5rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            animation: fadeIn 1s ease-out;
+        }
+
+        p {
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 1.6; /* Espaçamento entre linhas */
+    margin-bottom: 1rem; /* Espaço entre parágrafos */
+    hyphens: auto; /* Hifenização automática (opcional) */
+}
+        
+        .blog-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+            margin: 3rem auto;
+        }
+        
+        .blog-card {
+            background-color: #1a1a1a;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .blog-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+        }
+        
+        .blog-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .blog-card:hover img {
+            transform: scale(1.03);
+        }
+        
+        .blog-content {
+            padding: 1.5rem;
+        }
+        
+        .blog-date {
+            color: #ccc;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .blog-title {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: #fff;
+        }
+        
+        .blog-excerpt {
+            color: #ccc;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+        
+        .read-more {
+            color: #e91e63;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+        
+        .read-more:hover {
+            color: #c2185b;
+        }
+        
+        .newsletter-section {
+            background-color: #1a1a1a;
+            padding: 3rem;
+            border-radius: 10px;
+            margin: 4rem auto;
+            text-align: center;
+            max-width: 800px;
+        }
+        
+        .newsletter-title {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: #fff;
+        }
+        
+        .newsletter-desc {
+            color: #ccc;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .newsletter-form {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .newsletter-input {
+            padding: 0.8rem 1.2rem;
+            border: none;
+            border-radius: 5px;
+            min-width: 300px;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #fff;
+        }
+        
+        .newsletter-input:focus {
+            outline: 2px solid #e91e63;
+        }
+        
+        .newsletter-btn {
+            background-color: #e91e63;
+            color: #fff;
+            padding: 0.8rem 2rem;
+            border: none;
+            border-radius: 5px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .newsletter-btn:hover {
+            background-color: #c2185b;
+            transform: translateY(-2px);
+        }
+        
+        @media (max-width: 768px) {
+            .banner h1 {
+                font-size: 2.5rem;
+            }
+            
+            .blog-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .newsletter-form {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .newsletter-input {
+                width: 100%;
+                min-width: auto;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .banner h1 {
+                font-size: 2rem;
+            }
+            
+            .newsletter-section {
+                padding: 2rem 1.5rem;
+            }
+        }

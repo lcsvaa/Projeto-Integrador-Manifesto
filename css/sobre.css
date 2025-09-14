@@ -1,0 +1,122 @@
+        /* Estilos específicos para a página Sobre Nós */
+        .sobre-header {
+            padding: 4rem 0;
+            text-align: center;
+            background: #e81f63 center/cover;
+            color: white;
+        }
+        
+        p {
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 1.6; /* Espaçamento entre linhas */
+    margin-bottom: 1rem; /* Espaço entre parágrafos */
+    hyphens: auto; /* Hifenização automática (opcional) */
+}
+        .sobre-header h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        .sobre-header p {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        
+        .visual-identity {
+            padding: 4rem 0;
+            background-color: var(--darker-bg);
+        }
+        
+        .identity-row {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .identity-item {
+            text-align: center;
+            padding: 2rem;
+            background-color: var(--card-bg);
+            border-radius: 10px;
+            transition: transform var(--transition-speed) ease;
+            flex: 1;
+            max-width: 400px;
+        }
+        
+        .identity-item-wide {
+            text-align: center;
+            padding: 2rem;
+            background-color: var(--card-bg);
+            border-radius: 10px;
+            transition: transform var(--transition-speed) ease;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .identity-item:hover, .identity-item-wide:hover {
+            transform: translateY(-10px);
+        }
+        
+        .identity-item img {
+            max-width: 100%;
+            height: auto;
+            max-height: 900px;
+            object-fit: contain;
+            margin-bottom: 1.5rem;
+            border-radius: 10px;
+        }
+        
+        .identity-item-wide img {
+            max-width: 100%;
+            height: auto;
+            max-height: 300px;
+            object-fit: contain;
+            margin-bottom: 1.5rem;
+            border-radius: 10px;
+        }
+        
+        .identity-item h3, .identity-item-wide h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .nossa-historia {
+            padding: 4rem 0;
+            background-color: var(--dark-bg);
+        }
+        
+        .nossa-historia .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+        
+        .nossa-historia img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        
+        @media (max-width: 768px) {
+            .identity-row {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .identity-item, .identity-item-wide {
+                max-width: 100%;
+                width: 100%;
+            }
+            
+            .nossa-historia .container {
+                grid-template-columns: 1fr;
+            }
+        }

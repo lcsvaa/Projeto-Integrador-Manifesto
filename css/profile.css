@@ -1,0 +1,757 @@
+/* Estilos específicos para a página de perfil */
+.banner {
+    background: linear-gradient(135deg, #e91e63, #c2185b);
+    padding: 3rem 0;
+    text-align: center;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.banner h1 {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 1s ease-out;
+}
+
+.profile-container {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 20px;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    flex: 1; /* Ocupa todo o espaço disponível */
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.profile-sidebar {
+    flex: 1;
+    min-width: 250px;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    padding: 1.5rem;
+    height: fit-content;
+}
+
+.profile-content {
+    flex: 3;
+    min-width: 300px;
+}
+
+.profile-card {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.profile-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #e91e63;
+}
+
+.profile-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.profile-name {
+    font-size: 1.3rem;
+    margin-bottom: 0.3rem;
+    color: white;
+}
+
+.profile-email {
+    color: #ccc;
+    font-size: 0.9rem;
+}
+
+.profile-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.profile-menu li {
+    padding: 0.8rem 0;
+    border-bottom: 1px solid #333;
+    cursor: pointer;
+    color: #ccc;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.profile-menu li.active {
+    color: white;
+    font-weight: 600;
+}
+
+.profile-menu li:hover:not(.active) {
+    color: #e91e63;
+}
+
+.profile-menu li a {
+    color: inherit;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    width: 100%;
+}
+
+.profile-section {
+    display: none;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.profile-section.active {
+    display: block;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: white;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: #e91e63;
+}
+
+.section-description {
+    color: #ccc;
+    margin-bottom: 1.5rem;
+}
+
+.form-row {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.form-group {
+    flex: 1;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #ccc;
+    font-size: 0.9rem;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #2a2a2a;
+    border: 1px solid #333;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #e91e63;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.btn-cancel {
+    padding: 0.8rem 1.5rem;
+    background-color: transparent;
+    border: 1px solid #666;
+    color: #ccc;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-cancel:hover {
+    border-color: #e91e63;
+    color: white;
+}
+
+.btn-save {
+    padding: 0.8rem 1.5rem;
+    background-color: #e91e63;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-save:hover {
+    background-color: #c2185b;
+}
+
+/* Estilos para endereços */
+.addresses-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.address-card {
+    background-color: #2a2a2a;
+    border-radius: 8px;
+    padding: 1rem;
+    border: 1px solid #333;
+    transition: all 0.3s ease;
+}
+
+.address-card.active {
+    border-color: #e91e63;
+}
+
+.address-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.address-header h4 {
+    margin: 0;
+    color: white;
+}
+
+.address-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.btn-edit, .btn-delete {
+    background: none;
+    border: none;
+    color: #ccc;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.btn-edit:hover {
+    color: #2196f3;
+}
+
+.btn-delete:hover {
+    color: #f44336;
+}
+
+.address-content p {
+    margin: 0.3rem 0;
+    color: #ccc;
+    font-size: 0.9rem;
+}
+
+.btn-add-address {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem 1rem;
+    background-color: #2a2a2a;
+    border: 1px dashed #666;
+    color: #ccc;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    justify-content: center;
+}
+
+.btn-add-address:hover {
+    border-color: #e91e63;
+    color: white;
+}
+
+.address-form-container {
+    display: none;
+    margin-top: 1.5rem;
+}
+
+.form-title {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.form-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.form-checkbox input {
+    width: auto;
+}
+
+.form-checkbox label {
+    color: #ccc;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+/* Estilos para pedidos */
+.orders-preview {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.order-card {
+    background-color: #2a2a2a !important;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.order-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #333;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.order-id {
+    font-weight: 600;
+    color: white;
+}
+
+.order-date {
+    color: #ccc;
+    font-size: 0.9rem;
+}
+
+.order-status {
+    display: inline-block;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.status-delivered {
+    background-color: #4caf50;
+    color: white;
+}
+
+.order-products {
+    margin-bottom: 1rem;
+}
+
+.product-item {
+    display: flex;
+    gap: 1rem;
+    padding: 0.5rem 0;
+}
+
+.product-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.product-info {
+    flex: 1;
+}
+
+.product-name {
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+    color: white;
+}
+
+.product-price {
+    color: #e91e63;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+}
+
+.product-quantity {
+    color: #ccc;
+    font-size: 0.8rem;
+}
+
+.order-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.btn-details {
+    padding: 0.6rem 1rem;
+    background-color: transparent;
+    border: 1px solid #666;
+    color: #ccc;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.btn-details:hover {
+    border-color: #e91e63;
+    color: white;
+}
+
+.btn-buy-again {
+    padding: 0.6rem 1rem;
+    background-color: #e91e63;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.btn-buy-again:hover {
+    background-color: #c2185b;
+}
+
+/* Estilos para segurança */
+
+.password-container {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ccc;
+    cursor: pointer;
+    
+}
+
+.delete-account-container {
+  display: flex;
+  justify-content: flex-end; /* Alinha o botão à direita */
+  margin-top: 20px;
+}
+
+.btn-danger {
+  padding: 0.8rem 1.5rem;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+}
+
+/* Adicione isso no seu arquivo profile.css ou style.css */
+#delete-confirm-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-secondary{
+    border-radius: 8px;
+}
+
+#delete-confirm-modal .confirm-box {
+  background: #111010;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+#delete-confirm-modal h3 {
+  color: #d32f2f;
+  margin-bottom: 1rem;
+}
+
+#delete-confirm-modal p {
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+.confirm-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+  border-radius: 10px;
+}
+
+#confirm-delete-btn {
+  background-color: #d32f2f;
+  color: white;
+}
+
+#confirm-delete-btn:hover {
+  background-color: #b71c1c;
+}
+
+        .address-card.principal {
+            border: 2px solid #4CAF50;
+            background-color:rgb(36, 36, 36);
+        }
+        .addresses-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .address-card {
+            position: relative;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+        }
+        .notification {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 15px;
+            border-radius: 5px;
+            color: white;
+            z-index: 1000;
+            animation: fadeIn 0.5s, fadeOut 0.5s 2.5s;
+        }
+        .notification.success {
+            background-color: #4CAF50;
+        }
+        .notification.error {
+            background-color: #f44336;
+        }
+        @keyframes fadeIn {
+            from {opacity: 0; right: -100px;}
+            to {opacity: 1; right: 20px;}
+        }
+        @keyframes fadeOut {
+            from {opacity: 1; right: 20px;}
+            to {opacity: 0; right: -100px;}
+        }
+
+
+@media (max-width: 768px) {
+    .banner h1 {
+        font-size: 2.5rem;
+    }
+    
+    .profile-container {
+        flex-direction: column;
+    }
+    
+    .profile-sidebar {
+        order: 1;
+    }
+    
+    .profile-content {
+        order: 2;
+    }
+    
+    .form-row {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .order-actions {
+        flex-direction: column;
+    }
+    
+    .btn-details, .btn-buy-again {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner h1 {
+        font-size: 2rem;
+    }
+    
+    .order-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .product-item {
+        flex-direction: column;
+    }
+    
+    .product-image {
+        width: 100%;
+        height: auto;
+        max-height: 200px;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .banner {
+        padding: 2rem 0;
+    }
+    
+    .banner h1 {
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+    
+    .welcome-message {
+        font-size: 0.9rem;
+    }
+    
+    .profile-container {
+        margin: 1.5rem auto;
+        padding: 0 10px;
+    }
+    
+    .profile-sidebar,
+    .profile-content {
+        min-width: 100%;
+        padding: 1rem;
+    }
+    
+    .profile-avatar {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .profile-name {
+        font-size: 1.1rem;
+    }
+    
+    .profile-email {
+        font-size: 0.8rem;
+    }
+    
+    .section-title {
+        font-size: 1.3rem;
+    }
+    
+    .form-group input,
+    .form-group select {
+        padding: 0.6rem;
+    }
+    
+    .btn-cancel,
+    .btn-save {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+    }
+    
+    .address-card,
+    .order-card {
+        padding: 0.8rem;
+    }
+    
+    .address-header h4 {
+        font-size: 0.9rem;
+    }
+    
+    .address-content p,
+    .order-date,
+    .order-status,
+    .product-quantity {
+        font-size: 0.8rem;
+    }
+    
+    .btn-details,
+    .btn-buy-again {
+        padding: 0.5rem 0.8rem;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .banner h1 {
+        font-size: 1.6rem;
+    }
+    
+    .profile-menu li {
+        padding: 0.6rem 0;
+        font-size: 0.9rem;
+    }
+    
+    .section-title {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .form-actions {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .btn-cancel,
+    .btn-save {
+        width: 100%;
+    }
+    
+    .order-header {
+        flex-direction: column;
+        gap: 0.3rem;
+    }
+    
+    .order-actions {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .btn-details,
+    .btn-buy-again {
+        width: 100%;
+    }
+}
