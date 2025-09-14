@@ -1,23 +1,27 @@
 # 📦 Manifesto
 
-[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/lcsvaa/pi-manifesto) [![Projeto Acadêmico](https://img.shields.io/badge/Projeto%20Acadêmico-Senac-orange)]() [![Linguagem](https://img.shields.io/badge/Linguagem-PHP-blue)]() [![Frontend](https://img.shields.io/badge/Frontend-HTML%2FCSS%2FJS-brightgreen)]() [![Banco de Dados](https://img.shields.io/badge/Banco-MySQL-red)]() [![Status](https://img.shields.io/badge/Status-Concluído-brightgreen)]() [![Licença](https://img.shields.io/badge/Licença-MIT-lightgrey)]()
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/lcsvaa/pi-manifesto) [![Projeto Acadêmico](https://img.shields.io/badge/Projeto%20Acadêmico-Senac-orange)]() [![Linguagem](https://img.shields.io/badge/Linguagem-PHP-blue)]() [![Frontend](https://img.shields.io/badge/Frontend-HTML%2FCSS%2FJS-brightgreen)]() [![Banco de Dados](https://img.shields.io/badge/Banco-MySQL-red)]() [![Status](https://img.shields.io/badge/Status-Concluído-brightgreen)]()
 
 ---
 
 ## 📖 Descrição
 
-> O **Manifesto** é um projeto desenvolvido por alunos do curso **Técnico em Informática para Internet** do **Senac Lapa Tito**.  
-> O projeto consiste em uma **plataforma web de e-commerce**, criado como parte das atividades acadêmicas da turma.
+> O **Manifesto** é um projeto desenvolvido por **Beatriz Gomes, Lucas Vitorino e Ryan Hanada**, do curso **Técnico em Informática para Internet** do **Senac Lapa Tito**.  
+> O objetivo do projeto foi **aplicar os conhecimentos adquiridos ao longo do curso**, abrangendo todas as etapas do desenvolvimento:  
+> - Prototipação do projeto usando **Figma**  
+> - Estruturação do frontend com **HTML, CSS e JavaScript**  
+> - Desenvolvimento do backend em **PHP**  
+> - Criação de documentação completa do projeto  
 
 ---
 
 ## 👥 Equipe
 
-| Nome         | Perfil GitHub |
-|--------------|---------------|
-| Lucas        | [lcsvaa](https://github.com/lcsvaa) |
-| Beatriz      | [BexTheFrog](https://github.com/BexTheFrog) |
-| Ryan         | [Ryanslx](https://github.com/Ryanslx) |
+| Nome               | Perfil GitHub |
+|-------------------|---------------|
+| Beatriz Gomes      | [BexTheFrog](https://github.com/BexTheFrog) |
+| Lucas Vitorino     | [lcsvaa](https://github.com/lcsvaa) |
+| Ryan Hanada        | [Ryanslx](https://github.com/Ryanslx) |
 
 ---
 
@@ -66,4 +70,4 @@
 
 ## 📌 Observações
 
-> Projeto acadêmico desenvolvido pela turma de **Técnico em Informática para Internet** no **Senac Lapa Tito**, com foco em desenvolvimento web em equipe.
+> Projeto acadêmico realizado em trio, integrando frontend, backend, prototipação e documentação do curso.
