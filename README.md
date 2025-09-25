@@ -1,6 +1,6 @@
 # 📦 Manifesto
 
-[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/lcsvaa/pi-manifesto) [![Projeto Acadêmico](https://img.shields.io/badge/Projeto%20Acadêmico-Senac-orange)]() [![Linguagem](https://img.shields.io/badge/Linguagem-PHP-blue)]() [![Frontend](https://img.shields.io/badge/Frontend-HTML%2FCSS%2FJS-brightgreen)]() [![Banco de Dados](https://img.shields.io/badge/Banco-MySQL-red)]() [![Status](https://img.shields.io/badge/Status-Concluído-brightgreen)]()
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/lcsvaa/pi-manifesto) [![Projeto Acadêmico](https://img.shields.io/badge/Projeto%20Acadêmico-Senac-orange)]() [![Linguagem](https://img.shields.io/badge/Linguagem-PHP-red)]() [![Frontend](https://img.shields.io/badge/Frontend-HTML%2FCSS%2FJS-brightgreen)]() [![Banco de Dados](https://img.shields.io/badge/Banco-MySQL-red)]() [![Status](https://img.shields.io/badge/Status-Concluído-brightgreen)]()
 
 ---
 
